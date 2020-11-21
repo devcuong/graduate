@@ -1,3 +1,3 @@
 <?php
-     $servername = "//localhost/graduate";
+     $servername = "graduate.end";
 ?>
