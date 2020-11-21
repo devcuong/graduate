@@ -106,6 +106,24 @@
 /*nav*/
 .navbar{
 	width: 100%;
+	background-color: #008b32;
+}
+.navbar-item, .navbar-link{
+	color: #fff;
+}
+.navbar-link.is-active, .navbar-link:hover, a.navbar-item.is-active, a.navbar-item:hover{
+	background-color: #016938;
+	color: #fff;
+}
+.navbar-item.has-dropdown.is-active .navbar-link, .navbar-item.has-dropdown:hover .navbar-link{
+	background-color:#016938;
+}
+.navbar-dropdown{
+	background-color:#008b32;
+}
+.navbar-dropdown a.navbar-item:hover{
+	background-color: #016938;
+    color: #fff;
 }
 </style>
 </head>
@@ -185,7 +203,6 @@ require_once "./web/views/" . $data["Page"] . ".php"?>
 								<div class="navbar-dropdown">
 									<a class="navbar-item"> About </a> <a class="navbar-item"> Jobs
 									</a> <a class="navbar-item"> Contact </a>
-									<hr class="navbar-divider">
 									<a class="navbar-item"> Report an issue </a>
 								</div>
 							</div>
@@ -198,15 +215,17 @@ require_once "./web/views/" . $data["Page"] . ".php"?>
 	<section id="main">test xem ok không</section>
 	<section id="footer"></section>
 </body>
-<script>
-function myFunction() {
-  var x = document.getElementById("myTopnav");
-  if (x.className === "topnav") {
-    x.className += " responsive";
-  } else {
-    x.className = "topnav";
-  }
-}
-</script>
+<script type="text/javascript">
+		(function(){
+			var burger = document.querySelector('.burger');
+			var nav = document.querySelector('#'+burger.dataset.target);
+
+			burger.addEventListener('click', function(){
+				//alert(burger.length);
+				burger.classList.toggle('is-active');
+				nav.classList.toggle('is-active');
+			})
+		})();
+	</script>
 </html>
 
