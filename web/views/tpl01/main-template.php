@@ -68,35 +68,78 @@
 .wrap {
 	margin-top: 10px;
 	margin-left: 10px;
-    padding: 1rem 1rem 1rem 1rem;
+	padding: 1rem 1rem 1rem 1rem;
 }
 
 .search {
-    position: relative;
-    display: flex;
+	position: relative;
+	display: flex;
 }
 
 .searchTerm {
 	width: 100%;
-    border: 3px solid #e86b1f;
-    border-right: none;
-    padding: 5px;
-    height: 36px;
-    border-radius: 5px 0 0 5px;
-    outline: none;
-    color: #9DBFAF;
+	border: 3px solid #e86b1f;
+	border-right: none;
+	padding: 5px;
+	height: 36px;
+	border-radius: 5px 0 0 5px;
+	outline: none;
+	color: #9DBFAF;
 }
 
 .searchButton {
-    width: 40px;
-    height: 36px;
-    border: 1px solid #e86b1f;
-    background: #e86b1f;
-    text-align: center;
-    color: #fff;
-    border-radius: 0 5px 5px 0;
-    cursor: pointer;
-    font-size: 20px;
+	width: 40px;
+	height: 36px;
+	border: 1px solid #e86b1f;
+	background: #e86b1f;
+	text-align: center;
+	color: #fff;
+	border-radius: 0 5px 5px 0;
+	cursor: pointer;
+	font-size: 20px;
+}
+
+.header-nav {
+	background-color: #008b32;
+}
+
+/*nav*/
+.topnav {
+	overflow: hidden;
+}
+
+.topnav .active {
+	background: #0275d8;
+}
+
+.topnav a {
+	float: left;
+	display: block;
+	color: #f2f2f2;
+	text-align: center;
+	padding: 27px 16px;
+	text-decoration: none;
+	font-size: 1rem;
+}
+
+.dropdown {
+	float: left;
+	overflow: hidden;
+}
+
+.dropdown {
+	position: relative;
+}
+
+.dropdown .dropbtn {
+	font-size: 1rem;
+	border: none;
+	outline: none;
+	color: white;
+	padding: 27px 16px;
+	background-color: inherit;
+	font-family: inherit;
+	margin: 0;
 }
 </style>
 </head>
@@ -153,7 +196,20 @@ require_once "./web/views/" . $data["Page"] . ".php"?>
 				</div>
 			</div>
 		</div>
-		<div class="header-nav">abc</div>
+		<div class="header-nav">
+			<div class="container d-flex">
+				<div id="navMenu" class="navbar-menu">
+					<div class="navbar-end">
+						<a href="//congtytop.com/news/" class="navbar-item is-active">Tin
+							tức</a> <a href="//congtytop.com/news/tin-tuc-moi/"
+							class="navbar-item ">Tin tức mới</a> <a
+							href="//congtytop.com/news/hr-insider/" class="navbar-item ">HR
+							Insider</a> <a href="//congtytop.com/videos/"
+							class="navbar-item ">Videos</a>
+					</div>
+				</div>
+			</div>
+		</div>
 	</section>
 	<section id="main"></section>
 	<section id="footer"></section>
