@@ -104,42 +104,8 @@
 }
 
 /*nav*/
-.topnav {
-	overflow: hidden;
-}
-
-.topnav .active {
-	background: #0275d8;
-}
-
-.topnav a {
-	float: left;
-	display: block;
-	color: #f2f2f2;
-	text-align: center;
-	padding: 27px 16px;
-	text-decoration: none;
-	font-size: 1rem;
-}
-
-.dropdown {
-	float: left;
-	overflow: hidden;
-}
-
-.dropdown {
-	position: relative;
-}
-
-.dropdown .dropbtn {
-	font-size: 1rem;
-	border: none;
-	outline: none;
-	color: white;
-	padding: 27px 16px;
-	background-color: inherit;
-	font-family: inherit;
-	margin: 0;
+.navbar{
+	width: 100%;
 }
 </style>
 </head>
@@ -198,21 +164,49 @@ require_once "./web/views/" . $data["Page"] . ".php"?>
 		</div>
 		<div class="header-nav">
 			<div class="container d-flex">
-				<div id="navMenu" class="navbar-menu">
-					<div class="navbar-end">
-						<a href="//congtytop.com/news/" class="navbar-item is-active">Tin
-							tức</a> <a href="//congtytop.com/news/tin-tuc-moi/"
-							class="navbar-item ">Tin tức mới</a> <a
-							href="//congtytop.com/news/hr-insider/" class="navbar-item ">HR
-							Insider</a> <a href="//congtytop.com/videos/"
-							class="navbar-item ">Videos</a>
+				<nav class="navbar" role="navigation" aria-label="main navigation">
+					<div class="navbar-brand">
+						<a role="button" class="navbar-burger burger" aria-label="menu"
+							aria-expanded="false" data-target="navbarBasicExample"> 
+						<span aria-hidden="true"></span> 
+						<span aria-hidden="true"></span> 
+						<span aria-hidden="true"></span>
+						</a>
 					</div>
-				</div>
+
+					<div id="navbarBasicExample" class="navbar-menu">
+						<div class="navbar-start">
+							<a class="navbar-item"> Home </a> <a class="navbar-item">
+								Documentation </a>
+
+							<div class="navbar-item has-dropdown is-hoverable">
+								<a class="navbar-link"> More </a>
+
+								<div class="navbar-dropdown">
+									<a class="navbar-item"> About </a> <a class="navbar-item"> Jobs
+									</a> <a class="navbar-item"> Contact </a>
+									<hr class="navbar-divider">
+									<a class="navbar-item"> Report an issue </a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</nav>
 			</div>
 		</div>
 	</section>
-	<section id="main"></section>
+	<section id="main">test xem ok không</section>
 	<section id="footer"></section>
 </body>
+<script>
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+</script>
 </html>
 
