@@ -314,10 +314,14 @@ require_once "./web/views/" . $data["Page"] . ".php"?>
 				<div class="column is-3">
 					<h3 class="box-header">Danh mục sản phẩm</h3>
 					<div class="box-content">
-						<div class="box-item">abc</div>
-						<div class="box-item">abc</div>
-						<div class="box-item">abc</div>
-						<div class="box-item">abc</div>
+						<div class="box-item"><i class="fa fa-caret-right" aria-hidden="true"></i>
+						 Asus</div>
+						<div class="box-item"><i class="fa fa-caret-right" aria-hidden="true"></i>
+						 Apple</div>
+						<div class="box-item"><i class="fa fa-caret-right" aria-hidden="true"></i>
+						 HP</div>
+						<div class="box-item"><i class="fa fa-caret-right" aria-hidden="true"></i>
+						 abc</div>
 					</div>
 				</div>
 				<div class="column"></div>
