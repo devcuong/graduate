@@ -185,23 +185,44 @@
 }
 
 .box-header {
-    color: #fff;
-    background-color: #008b32;
-    font-family: 'Anton', sans-serif;
-    font-size: 100%;
-    padding-top: 0.5rem;
-    padding-bottom: 0.25rem;
-    padding-left: 1.25rem;
+	color: #fff;
+	background-color: #008b32;
+	font-family: 'Anton', sans-serif;
+	font-size: 100%;
+	padding-top: 0.5rem;
+	padding-bottom: 0.25rem;
+	padding-left: 1.25rem;
 }
 
 .box-content {
 	border: 1px solid #008b32;
-	
 }
 
-.box-item{
+.box-item {
 	padding: 10px;
 	border-bottom: 1px solid #cecece;
+}
+
+.product-image{
+	min-height: 220px;
+	max-height:220px;
+	overflow: hidden;
+}
+
+.product-name{
+	text-align: center;
+}
+
+.product-name h3{
+    font-size: 16px;
+    font-weight: bold;
+    display: block;
+    margin-bottom: 0px;
+    margin-top: 0px;
+}
+
+.mt-20{
+	margin-top: 20px;
 }
 </style>
 </head>
@@ -312,16 +333,34 @@ require_once "./web/views/" . $data["Page"] . ".php"?>
 		<div class="container">
 			<div class="columns">
 				<div class="column is-3">
-					<h3 class="box-header">Danh mục sản phẩm</h3>
-					<div class="box-content">
-						<div class="box-item"><i class="fa fa-caret-right" aria-hidden="true"></i>
-						 Asus</div>
-						<div class="box-item"><i class="fa fa-caret-right" aria-hidden="true"></i>
-						 Apple</div>
-						<div class="box-item"><i class="fa fa-caret-right" aria-hidden="true"></i>
-						 HP</div>
-						<div class="box-item"><i class="fa fa-caret-right" aria-hidden="true"></i>
-						 abc</div>
+					<div class="category-block">
+						<h3 class="box-header">Danh mục sản phẩm</h3>
+						<div class="box-content">
+							<div class="box-item">
+								<i class="fa fa-caret-right" aria-hidden="true"></i> Asus
+							</div>
+							<div class="box-item">
+								<i class="fa fa-caret-right" aria-hidden="true"></i> Apple
+							</div>
+							<div class="box-item">
+								<i class="fa fa-caret-right" aria-hidden="true"></i> HP
+							</div>
+							<div class="box-item">
+								<i class="fa fa-caret-right" aria-hidden="true"></i> Apple
+							</div>
+						</div>
+					</div>
+					<div class="mt-20"></div>
+					<div class="best-product-block">
+						<h3 class="box-header">Sản phẩm tiêu biểu</h3>
+						<div class="box-content">
+							<div class="product-item">
+								<div class="product-image">
+									<img alt="" src="web/public/images/product-image-1.jpg">
+								</div>
+								<div class="product-name"><h3>Macbook Pro 16 inch MVVK2 16GB/1TB 2019</h3></div>
+							</div>
+						</div>
 					</div>
 				</div>
 				<div class="column"></div>
